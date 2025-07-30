@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Versión Web</title>
+  <script>
+    function esMovil() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    if (esMovil()) {
+      window.location.href = "movil/index.html";
+    }
+  </script>
+</head>
+<body>
+  <h1>Hola, estás en la versión web</h1>
+</body>
+</html>
